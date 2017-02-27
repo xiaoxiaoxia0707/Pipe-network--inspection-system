@@ -16,12 +16,15 @@ body,
 header {
   width: 100%;
   height: 84px;
-  background: #3e6272;
+  background-color: #3e6272;
 }
 h3 {
-  margin: 30.5px auto;
+  margin: 30.5px 0 30.5px 20px;
   color: #fff;
-  float: right;
+}
+h2 {
+  margin: 11.5px auto;
+  float: left;
 }
 header .logo {
   float: left;
@@ -93,11 +96,11 @@ header .user-message {
   height: 494px;
 }
 .main-head div {
-  float: left;
+  margin: 0 25px 0 25px;
 }
 .main-head a {
   float: right;
-  margin: 14 auto;
+  margin: 14px 25px 14px 0;
 }
 table {
   width: 1000px;
@@ -110,9 +113,6 @@ table thead {
 }
 table thead tr {
   height: 40px;
-}
-table th:nth-of-type(2) {
-  width: 200px;
 }
 table th:nth-of-type(3) {
   width: 380px;

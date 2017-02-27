@@ -23,14 +23,19 @@ body {
 @{selector} {
     width: 100%;
     height: 84px;
-    background: #3e6272;
+    background-color: #3e6272;
 }
-//关于h3
+//关于后台管理系统的h3
 @margin: h3;
 @{margin} {
-    margin: 30.5px auto;
+    margin: 30.5px 0 30.5px 20px;
     color: #fff;
-    float: right;
+}
+//关于认证码生成的h2
+@margin-top:h2;
+@{margin-top} {
+    margin: 11.5px auto;
+    float: left;
 }
 
 //头部的div
@@ -117,19 +122,14 @@ header {
         height: 494px;
    } 
 }
-main-head {
-    & a {
-
-    }
-}
 //内容的头部部分
 .main-head {
     & div {
-       float: left;
+       margin: 0 25px 0 25px;
     }
     & a {
        float: right;
-        margin: 14 auto;
+        margin: 14px 25px 14px 0;
     }
 }
 //内容表格
@@ -143,9 +143,6 @@ table{
     }
     & thead tr {
         height: 40px;    
-    }
-     & th:nth-of-type(2) {
-        width: 200px;
     }
     & th:nth-of-type(3) {
         width: 380px;

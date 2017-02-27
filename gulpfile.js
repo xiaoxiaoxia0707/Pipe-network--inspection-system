@@ -6,10 +6,15 @@ var gulp = require('gulp'),
 
 // 样式
 gulp.task('testLess', function() {
-    gulp.src('src/less/*.less')
+    gulp.src('src/less/themes.less')
         .pipe(less())
         .pipe(gulp.dest('dist/css'))
         .pipe(concat('themes.min.css'))
+        .pipe(gulp.dest('dist/css'));
+    gulp.src('src/less/master.less')
+        .pipe(less())
+        .pipe(gulp.dest('dist/css'))
+        .pipe(concat('master.min.css'))
         .pipe(gulp.dest('dist/css'));
 });
 //html
