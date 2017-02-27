@@ -1,5 +1,7 @@
+
 .iconfont {
   font-size: 20px !important;
+  font-weight: bold;
 }
 a {
   text-decoration: none;
@@ -68,12 +70,12 @@ header .user-message {
   color: #262626;
   line-height: 60px;
   border-bottom: 2px solid #cdcdcd;
+  text-align: center;
 }
 .nav ul li:hover {
   background-color: #ff4a01;
 }
 .nav ul li a {
-  margin: 0 20px 0 50px;
   color: #262626;
 }
 .main-head {
@@ -105,12 +107,16 @@ table {
 }
 table thead {
   background-color: #6cc1d6;
+  width: 1000px;
 }
 table thead tr {
   height: 40px;
 }
-table th:nth-child(3) {
-  width: 305px;
+table th:nth-of-type(2) {
+  width: 200px;
+}
+table th:nth-of-type(3) {
+  width: 380px;
 }
 table tbody {
   height: 404px;
@@ -119,8 +125,8 @@ table tbody tr {
   height: 42px;
 }
 table tr td {
-  border-bottom: solid 1px #cdcdcd;
+  text-align: center;
 }
-table tr td a {
-  margin: 0 auto;
+table tr td {
+  border-bottom: solid 1px #cdcdcd;
 }

@@ -2,6 +2,7 @@
 @size: 20px !important;
 .iconfont {
     font-size: @size;
+    font-weight: bold;
 }
 // a标签下划线去掉
 @decoration:none;
@@ -89,12 +90,12 @@ header {
         color: #262626;
         line-height: 60px;
         border-bottom: 2px solid #cdcdcd;
+        text-align: center;
     }
     & li:hover {
         background-color: #ff4a01;
     }
     & li a {
-        margin: 0 20px 0 50px;
         color: #262626;
     }
 }
@@ -138,12 +139,16 @@ table{
     border-collapse:collapse;
     & thead {
         background-color: #6cc1d6; 
+        width: 1000px;
     }
     & thead tr {
-        height: 40px;
+        height: 40px;    
     }
-    & th:nth-child(3) {
-        width: 305px;
+     & th:nth-of-type(2) {
+        width: 200px;
+    }
+    & th:nth-of-type(3) {
+        width: 380px;
     }
     &  tbody {
         height: 404px;  
@@ -151,10 +156,11 @@ table{
     & tbody tr {
         height: 42px;
     }
-    & tr td {
-        border-bottom:solid 1px #cdcdcd;
+    & tr td{
+        text-align: center;
     }
-    & tr td a {
-        margin: 0 auto;
+    & tr td {
+        border-bottom: solid 1px #cdcdcd;
+       
     }
 }
