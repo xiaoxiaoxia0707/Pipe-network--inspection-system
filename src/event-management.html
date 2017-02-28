@@ -5,8 +5,8 @@
     <title>事件管理</title>
     <link rel="stylesheet" type="text/css" href="./js/lib/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./js/lib/bootstrap/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="./js/lib/bootstrap/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" type="text/css" href="../dist/css/themes.min.css">
-    <link rel="stylesheet" type="text/css" href="../dist/css/master.min.css">
     <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_pbzl8rusht49529.css">
     </style>
 </head>
@@ -51,7 +51,12 @@
                 <div class="main-content">
                     <table class="table">
                         <div>
-                            <div><a href="./edit-event.html">编辑事件分类</a></div>
+                            <div>
+                                <label>搜索时间：<input class="span2" size="16" type="text" value="2012-02-01"/></label>
+                            </div>
+                            <div>
+                                <a href="./edit-event.html">编辑事件分类</a>
+                            </div>
                         </div>
                         <thead>
                             <tr>
@@ -70,7 +75,7 @@
                                 <td></td>
                                 <td>
                                     <a href="#">已修复&nbsp;</a>
-                                    <a href="#">查看详情</a>
+                                    <a href="./view-detail.html">查看详情</a>
                                 </td>
                             </tr>
                             <tr>
@@ -113,14 +118,16 @@
                                     <a href="#">查看详情</a>
                                 </td>
                             </tr>
-                            </tbody>
-                        </table>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
     <script type="text/javascript" src="./js/lib/jquery.min.js"></script>
     <script type="text/javascript" src="./js/lib/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/lib/bootstrap/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="./js/lib/bootstrap/bootstrap-datetimepicker.zh-CN.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
 </body>
 
