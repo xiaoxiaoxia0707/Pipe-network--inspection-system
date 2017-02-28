@@ -3,6 +3,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>事件管理</title>
+    <link rel="stylesheet" type="text/css" href="./js/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./js/lib/bootstrap/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="../dist/css/themes.min.css">
     <link rel="stylesheet" type="text/css" href="../dist/css/master.min.css">
     <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_pbzl8rusht49529.css">
@@ -13,41 +15,41 @@
     <div class="wrap">
         <header>
             <div class="logo">
-                <img src="">
                 <h3>管网巡检后台管理系统</h3>
             </div>
             <div class="user-message">
                 <div>
-                    <span class="icon iconfont icon-guanliyuan"></span> 管理员
+                    <span class="icon iconfont icon-guanliyuan"></span>
+                    <h6>管理员</h6>
+                    <a href="#">退出登陆</a>
                 </div>
-                <a href="#">退出登陆</a>
             </div>
         </header>
         <div class="content">
-            <div class="nav">
+            <div class="suiku-nav">
                 <ul>
                     <li>
-                        <a class="icon iconfont icon-shishijiankong" href="#"></a>&nbsp;实时监控
+                        <a class="icon iconfont icon-shishijiankong"></a><span>实时监控</span>
                     </li>
                     <li>
-                        <a class="icon iconfont icon-shijianguanli" href="#"></a>&nbsp;事件管理
+                        <a class="icon iconfont icon-shijianguanli"></a><span>事件管理</span>
                     </li>
                     <li>
-                        <a class="icon iconfont icon-jihuaguanli" href="#"></a>&nbsp;计划管理
+                        <a class="icon iconfont icon-jihuaguanli"></a><span>计划管理</span>
                     </li>
                     <li>
-                        <a class="icon iconfont icon-xinxiguanli" href="#"></a>&nbsp;信息管理
+                        <a class="icon iconfont icon-xinxiguanli"></a><span>信息管理</span>
                     </li>
                 </ul>
             </div>
             <div class="main">
-                <div class="main-head"> 
+                <div class="main-head">
                     <p>运行监管</p>
                     <p><span>管网巡检</span></p>
                     <p>用户管理</p>
                 </div>
                 <div class="main-content">
-                    <table>
+                    <table class="table">
                         <div>
                             <div><a href="./edit-event.html">编辑事件分类</a></div>
                         </div>
@@ -111,13 +113,14 @@
                                     <a href="#">查看详情</a>
                                 </td>
                             </tr>
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
                 </div>
             </div>
         </div>
     </div>
     <script type="text/javascript" src="./js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/lib/bootstrap/bootstrap.min.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
 </body>
 

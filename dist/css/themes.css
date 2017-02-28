@@ -1,15 +1,14 @@
 .iconfont {
-  font-size: 20px !important;
-  font-weight: bold;
+  font-size: 22px !important;
 }
 a {
   text-decoration: none;
 }
-.nav ul {
+.suiku-nav ul {
   list-style-type: none;
 }
 body,
-.nav ul {
+.suiku-nav ul {
   margin: 0;
   padding: 0;
 }
@@ -19,8 +18,17 @@ header {
   background-color: #3e6272;
 }
 h3 {
-  margin: 30.5px 0 30.5px 20px;
+  margin: 0 0 0 20px;
   color: #e7f2f8;
+  line-height: 84px;
+}
+h6 {
+  color: #e7f2f8;
+  line-height: 84px;
+  font-weight: bold;
+  margin: 0 40px 0 8px;
+  float: left;
+  font-size: 16px;
 }
 h2 {
   margin: 11.5px auto;
@@ -34,55 +42,66 @@ header .user-message {
   float: right;
   width: 180px;
   height: 84px;
-  margin-right: 30px;
+  margin-right: 45px;
 }
-.user-message div:first-child {
+.user-message div span {
   float: left;
-  margin: 24px auto;
+  margin: 28px auto;
   color: #e7f2f8;
 }
-.user-message a {
-  float: right;
-  margin: 33px auto;
+.user-message div a {
+  float: left;
+  margin: 31px auto;
   color: #e7f2f8;
+  font-weight: bold;
 }
 .content {
   width: 100%;
   height: 588px;
   background-color: #f0eff5;
 }
-.content .nav {
+.content .suiku-nav {
   width: 210px;
   float: left;
   margin: 20px 0 0 20px;
   border: 2px solid #cdcdcd;
   border-radius: 6px;
   background-color: #fff;
-  height: 564px;
+  height: 568px;
 }
 .content .main {
   width: 1097px;
   float: right;
   height: 588px;
 }
-.nav ul {
+.suiku-nav ul {
   height: 210px;
 }
-.nav ul li {
+.suiku-nav ul li {
   height: 58px;
   color: #262626;
-  line-height: 60px;
+  line-height: 58px;
   border-bottom: 2px solid #cecdd5;
-  text-align: center;
+  font-size: 14px;
 }
-.nav ul li:hover {
+.suiku-nav ul li:hover {
   background-color: #ff6801;
 }
-.nav ul li a {
-  color: #262626;
+.suiku-nav ul li a {
+  color: #525252;
+  float: left;
+  margin-left: 52px;
+}
+.suiku-nav ul li span {
+  float: right;
+  font-size: 16px;
+  color: #696969;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 52px;
 }
 .main-head {
-  height: 46px;
+  height: 48px;
   margin: 20px 0 20px 0;
 }
 .main-content,
@@ -93,48 +112,50 @@ header .user-message {
   background-color: #fff;
 }
 .main-content {
-  height: 494px;
+  height: 500px;
 }
 .main-head div {
   margin: 0 25px 0 25px;
 }
 .main-head p {
   float: left;
-  margin: 16px 25px 16px 25px;
-  color: #4a4a4a;
+  margin: 12px 25px 12px 25px;
+  color: #2d2d2d;
   font-weight: bold;
+  font-size: 16px;
 }
 .main-head span {
   color: #ff6801;
 }
-table {
+.table {
   width: 1026px;
   margin: 0 auto;
-  border-collapse: collapse;
 }
-table thead {
+.table thead {
   width: 1000px;
   background-color: #6bc1d8;
   border: 1px solid #50b6cf;
-  margin-top: 50px;
+  margin: 0;
 }
-table thead tr {
+.table thead tr {
   height: 40px;
   color: #fff;
 }
-table th:nth-of-type(3) {
-  width: 380px;
-}
-table tbody {
+.table tbody {
   height: 404px;
 }
-table tbody tr {
+.table tbody tr {
   height: 42px;
 }
-table tr td {
+.table tr td {
   text-align: center;
   border-bottom: solid 1px #cdcdcd;
+  font-size: 14px;
 }
-table tr td a {
+.table tr th {
+  text-align: center;
+  font-size: 14px;
+}
+.table tr td a {
   color: #656565;
 }

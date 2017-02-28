@@ -1,8 +1,7 @@
 //iconfont的尺寸
-@size: 20px !important;
+@size: 22px !important;
 .iconfont {
     font-size: @size;
-    font-weight: bold;
 }
 // a标签下划线去掉
 @decoration:none;
@@ -10,7 +9,7 @@ a {
     text-decoration:none;
 }
 //关于body与nav里面的ul
-.nav ul {
+.suiku-nav ul {
     &:extend(body);
     list-style-type: none;
 }
@@ -28,8 +27,20 @@ body {
 //关于后台管理系统的h3
 @margin: h3;
 @{margin} {
-    margin: 30.5px 0 30.5px 20px;
+    margin: 0 0 0 20px;
     color: #e7f2f8;
+    line-height: 84px;
+}
+//关于头部的管理员
+@margin-h6: h6;
+@{margin-h6} {
+    color: #e7f2f8;
+    line-height: 84px;
+    font-weight: bold;
+    margin: 0 40px 0 8px;;
+    float: left;
+    font-size: 16px;
+
 }
 //关于认证码生成的h2
 @margin-top:h2;
@@ -48,20 +59,21 @@ header {
         float: right;
         width: 180px;
         height: 84px;
-        margin-right: 30px;
+        margin-right: 45px;
     }
 }
 //用户信息
-.user-message{
-    & div:first-child{
+.user-message div {
+    & span{
         float: left;
-        margin: 24px auto;
+        margin: 28px auto;
         color: #e7f2f8;
     }
     & a {
-        float: right;
-        margin: 33px auto;
-        color:  #e7f2f8;;
+        float: left;
+        margin: 31px auto;
+        color:  #e7f2f8;
+        font-weight: bold;
     }
 }
 
@@ -73,14 +85,14 @@ header {
     background-color: #f0eff5;
 }
 .content {
-    & .nav {
+    & .suiku-nav {
         width: 210px;
         float: left;
         margin: 20px 0 0 20px;
         border: 2px solid #cdcdcd;
         border-radius: 6px;
         background-color: #fff;
-        height: 564px;
+        height: 568px;
     }
     & .main {
         width: 1097px;
@@ -89,26 +101,36 @@ header {
     }
 }
 //导航
-.nav ul {
+.suiku-nav ul {
     height: 210px;
     & li {
         height: 58px;
         color: #262626;
-        line-height: 60px;
+        line-height: 58px;
         border-bottom: 2px solid #cecdd5;
-        text-align: center;
+        font-size: 14px;
     }
     & li:hover {
         background-color: #ff6801;
     }
     & li a {
-        color: #262626;
+        color: #525252;
+        float: left;
+        margin-left: 52px;
+    }
+    & li span {
+        float: right;
+        font-size: 16px;
+        color: #696969;
+        font-weight: bold;
+        text-align: center;
+        margin-right: 52px;
     }
 }
 //内容的主要部分
 .main-head {
     &:extend(.main-content);
-    height: 46px;
+    height: 48px;
     margin: 20px 0 20px 0;
 }
 .main-content {
@@ -119,7 +141,7 @@ header {
 }
 .main {
    &-content {
-        height: 494px;
+        height: 500px;
    }
 }
 
@@ -130,31 +152,28 @@ header {
     }
     & p {
         float: left;
-        margin: 16px 25px 16px 25px;
-        color: #4a4a4a;
+        margin: 12px 25px 12px 25px;
+        color: #2d2d2d;
         font-weight:bold;
+        font-size: 16px;
     }
     & span {
         color: #ff6801;
     }
 }
 //内容表格
-table{
+.table{
     width: 1026px;
     margin: 0 auto;
-    border-collapse:collapse;
     & thead {
         width: 1000px;
         background-color: #6bc1d8; 
         border: 1px solid #50b6cf;
-        margin-top: 50px;
+        margin: 0;
     }
     & thead tr {
         height: 40px;
         color: #fff;    
-    }
-    & th:nth-of-type(3) {
-        width: 380px;
     }
     &  tbody {
         height: 404px;  
@@ -165,6 +184,11 @@ table{
     & tr td{
         text-align: center;
         border-bottom: solid 1px #cdcdcd;
+        font-size: 14px;
+    }
+    & tr th {
+        text-align: center;
+        font-size: 14px;
     }
     & tr td a {
         color: #656565;
