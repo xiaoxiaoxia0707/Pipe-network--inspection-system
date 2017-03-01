@@ -8,14 +8,16 @@
     <link rel="stylesheet" type="text/css" href="./js/lib/bootstrap/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" type="text/css" href="../dist/css/themes.min.css">
     <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_pbzl8rusht49529.css">
-    </style>
 </head>
 
 <body>
     <div class="wrap">
+        <!-- 头部页面 -->
         <header>
             <div class="logo">
                 <h3>管网巡检后台管理系统</h3>
+                <h6 class="active">管理</h6>
+                <h6>首页</h6>
             </div>
             <div class="user-message">
                 <div>
@@ -25,7 +27,9 @@
                 </div>
             </div>
         </header>
+        <!--中部主体 -->
         <div class="content">
+            <!-- 水库导航 -->
             <div class="suiku-nav">
                 <ul>
                     <li>
@@ -42,12 +46,15 @@
                     </li>
                 </ul>
             </div>
+            <!-- 主体内容（中部） -->
             <div class="main">
+                <!-- 主体内容的头部部分 -->
                 <div class="main-head">
                     <p>运行监管</p>
                     <p><span>管网巡检</span></p>
                     <p>用户管理</p>
                 </div>
+                <!-- 主体内容表格 -->
                 <div class="main-content">
                     <table class="table">
                         <div>
@@ -75,7 +82,7 @@
                                 <td></td>
                                 <td>
                                     <a href="#">已修复&nbsp;</a>
-                                    <a href="./view-detail.html">查看详情</a>
+                                    <a href="#" data-toggle="modal" data-target="#myModal">查看详情</a>
                                 </td>
                             </tr>
                             <tr>
@@ -85,7 +92,7 @@
                                 <td></td>
                                 <td>
                                     <a href="#">已修复&nbsp;</a>
-                                    <a href="#">查看详情</a>
+                                    <a href="#" data-toggle="modal" data-target="#myModal">查看详情</a>
                                 </td>
                             </tr>
                             <tr>
@@ -95,7 +102,7 @@
                                 <td></td>
                                 <td>
                                     <a href="#">已修复&nbsp;</a>
-                                    <a href="#">查看详情</a>
+                                    <a href="#" data-toggle="modal" data-target="#myModal">查看详情</a>
                                 </td>
                             </tr>
                             <tr>
@@ -105,7 +112,7 @@
                                 <td></td>
                                 <td>
                                     <a href="#">已修复&nbsp;</a>
-                                    <a href="#">查看详情</a>
+                                    <a a href="#" data-toggle="modal" data-target="#myModal">查看详情</a>
                                 </td>
                             </tr>
                             <tr>
@@ -115,11 +122,34 @@
                                 <td></td>
                                 <td>
                                     <a href="#">上报中&nbsp;</a>
-                                    <a href="#">查看详情</a>
+                                    <a a href="#" data-toggle="modal" data-target="#myModal">查看详情</a>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">事件分类</h4>
+                </div>
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">事件地址</h4>
+                </div>
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">事件描述</h4>
+                </div>
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">事件坐标</h4>
+                </div>
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">事件照片</h4>
                 </div>
             </div>
         </div>

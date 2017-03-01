@@ -8,14 +8,16 @@
     <link rel="stylesheet" type="text/css" href="./js/lib/bootstrap/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" type="text/css" href="../dist/css/themes.min.css">
     <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_pbzl8rusht49529.css">
-    </style>
 </head>
 
 <body>
     <div class="wrap">
+        <!-- 头部页面 -->
         <header>
             <div class="logo">
                 <h3>管网巡检后台管理系统</h3>
+                <h6 class="active">管理</h6>
+                <h6>首页</h6>
             </div>
             <div class="user-message">
                 <div>
@@ -25,7 +27,9 @@
                 </div>
             </div>
         </header>
+        <!--中部主体 -->
         <div class="content">
+            <!-- 水库导航 -->
             <div class="suiku-nav">
                 <ul>
                     <li>
@@ -42,17 +46,22 @@
                     </li>
                 </ul>
             </div>
+            <!-- 主体内容（中部） -->
             <div class="main">
+                <!-- 主体内容的头部部分 -->
                 <div class="main-head">
                     <p>运行监管</p>
                     <p><span>管网巡检</span></p>
                     <p>用户管理</p>
                 </div>
+                <!-- 主体内容表格 -->
                 <div class="main-content">
                     <table class="table">
                         <div>
                             <div>
-                                <label>搜索时间：<input class="span2" size="16" type="text" value="2012-02-01"/></label>
+                                <label>搜索时间：
+                                    <input class="span2" size="16" type="text" value="2012-02-01" />
+                                </label>
                             </div>
                             <div>
                                 <a href="./edit-event.html">返回</a>

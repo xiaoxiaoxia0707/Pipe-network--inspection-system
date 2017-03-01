@@ -1,7 +1,7 @@
 .iconfont {
   font-size: 22px !important;
 }
-a {
+a:hover {
   text-decoration: none;
 }
 .suiku-nav ul {
@@ -18,25 +18,25 @@ header {
   background-color: #3e6272;
 }
 h3 {
-  margin: 0 0 0 20px;
-  color: #e7f2f8;
-  line-height: 84px;
+  margin: 0 30px 0 20px;
 }
 h6 {
-  color: #e7f2f8;
-  line-height: 84px;
-  font-weight: bold;
   margin: 0 40px 0 8px;
-  float: left;
   font-size: 16px;
+  font-weight: bold;
 }
-h2 {
-  margin: 11.5px auto;
+h6,
+h3 {
+  line-height: 84px;
   float: left;
+  color: #e7f2f8;
+}
+.logo .active {
+  color: #ff6801;
 }
 header .logo {
   float: left;
-  width: 350px;
+  width: 452px;
 }
 header .user-message {
   float: right;
