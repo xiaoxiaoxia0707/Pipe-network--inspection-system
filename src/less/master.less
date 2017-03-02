@@ -4,3 +4,24 @@ html,body,#container{
 	height:@height;
 	overflow: @overflow;
 }
+
+//头部的高度
+h3 {
+     &:extend(h6);
+}
+h6 {
+	line-height: 50px;
+}
+
+@header-height: 50px;
+header,.user-message{
+	height:@header-height !important;
+}
+.user-message div {
+	& span {
+		margin: 9.5px auto;
+	}
+	& a {
+		margin: 15px auto;
+	}
+}

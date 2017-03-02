@@ -31,7 +31,7 @@ h3 {
   float: left;
   color: #e7f2f8;
 }
-.logo .active {
+h6.active {
   color: #ff6801;
 }
 header .logo {
@@ -40,7 +40,7 @@ header .logo {
 }
 header .user-message {
   float: right;
-  width: 180px;
+  width: 200px;
   height: 84px;
   margin-right: 45px;
 }
@@ -48,6 +48,9 @@ header .user-message {
   float: left;
   margin: 28px auto;
   color: #e7f2f8;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 28px;
 }
 .user-message div a {
   float: left;
