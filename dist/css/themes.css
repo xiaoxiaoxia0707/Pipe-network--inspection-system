@@ -2,7 +2,7 @@
   font-size: 22px !important;
 }
 a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .suiku-nav ul {
   list-style-type: none;
@@ -78,7 +78,7 @@ header .user-message {
   height: 588px;
 }
 .suiku-nav ul {
-  height: 210px;
+  height: 232px;
 }
 .suiku-nav ul li {
   height: 58px;
@@ -88,6 +88,9 @@ header .user-message {
   font-size: 14px;
 }
 .suiku-nav ul li:hover {
+  background-color: #ff6801;
+}
+.suiku-nav ul li:nth-child(2) {
   background-color: #ff6801;
 }
 .suiku-nav ul li a {
@@ -139,7 +142,7 @@ header .user-message {
   margin: 0;
   line-height: 30px;
 }
-.main-content span {
+.main-content div span {
   float: left;
   display: block;
   width: 60px;
@@ -178,8 +181,16 @@ header .user-message {
 }
 .main-content div div a {
   font-weight: bold;
-  color: #72c3d6;
   line-height: 30px;
+}
+.main-content div div a:link {
+  color: #FF0000;
+}
+.main-content div div a:visited {
+  color: #72c3d6;
+}
+.main-content div div a:hover {
+  color: #ff6801;
 }
 .main-content div input {
   float: left;
@@ -191,7 +202,6 @@ header .user-message {
 .table thead {
   width: 1000px;
   background-color: #6bc1d8;
-  border: 1px solid #50b6cf;
   margin: 0;
 }
 .table thead tr {
@@ -200,9 +210,6 @@ header .user-message {
 }
 .table tbody {
   height: 404px;
-}
-.table tbody tr {
-  height: 42px;
 }
 .table tr td {
   text-align: center;
@@ -214,5 +221,5 @@ header .user-message {
   font-size: 14px;
 }
 .table tr td a {
-  color: #656565;
+  color: #333;
 }

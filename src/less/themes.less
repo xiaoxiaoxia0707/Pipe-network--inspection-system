@@ -6,7 +6,7 @@
 // a标签下划线去掉
 @decoration:none;
 a:hover {
-    text-decoration:@decoration;
+    text-decoration:@decoration !important;
 }
 
 //关于body与nav里面的ul
@@ -107,7 +107,7 @@ header {
 }
 //导航
 .suiku-nav ul {
-    height: 210px;
+    height: 232px;
     & li {
         height: 58px;
         color: #262626;
@@ -116,6 +116,9 @@ header {
         font-size: 14px;
     }
     & li:hover {
+        background-color: #ff6801;
+    }
+    & li:nth-child(2){
         background-color: #ff6801;
     }
     & li a {
@@ -177,7 +180,7 @@ header {
         margin: 0;
         line-height: 30px;
     }
-    &  span {
+    & div span {
         float: left;
         display: block;
         width: 60px;
@@ -217,8 +220,17 @@ header {
     }
     & div div a {
         font-weight:bold;
-        color: #72c3d6;
+        
         line-height: 30px;
+    }
+    & div div a:link {
+        color: #FF0000;
+    }
+    & div div a:visited {
+        color: #72c3d6;
+    }
+    & div div a:hover {
+        color: #ff6801;
     }
     & div input {
         float: left;
@@ -232,7 +244,6 @@ header {
     & thead {
         width: 1000px;
         background-color: #6bc1d8; 
-        border: 1px solid #50b6cf;
         margin: 0;
     }
     & thead tr {
@@ -241,9 +252,6 @@ header {
     }
     &  tbody {
         height: 404px;  
-    }
-    & tbody tr {
-        height: 42px;
     }
     & tr td{
         text-align: center;
@@ -255,6 +263,7 @@ header {
         font-size: 14px;
     }
     & tr td a {
-        color: #656565;
+        color: #333;
     }
+   
 }
